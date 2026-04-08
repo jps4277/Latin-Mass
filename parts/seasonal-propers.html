@@ -22,6 +22,7 @@
           <a href="../index.html">Home</a>
           <a href="order-of-mass.html">Order of Mass</a>
           <a href="seasonal-propers.html">Seasonal Propers</a>
+          <a href="pronunciation-guide.html">Pronunciation</a>
           <a href="symbolism-guide.html">Symbolism</a>
           <a href="glossary.html">Glossary</a>
           <a href="sources.html">Sources</a>
@@ -42,7 +43,38 @@
       </section>
 
       <section class="section reveal" style="animation-delay: 0.1s;">
-        <article class="mass-part">
+        <h2>Quick Navigation</h2>
+        <div class="toc-grid">
+          <article class="toc-card">
+            <h3>Seasons</h3>
+            <p><a href="#advent-i">Advent I</a></p>
+            <p><a href="#lent-i">Lent I</a></p>
+            <p><a href="#easter-sunday">Easter Sunday</a></p>
+          </article>
+          <article class="toc-card">
+            <h3>Saints Days</h3>
+            <p><a href="#st-joseph">Saint Joseph</a></p>
+            <p><a href="#all-saints">All Saints</a></p>
+          </article>
+          <article class="toc-card">
+            <h3>Study Tip</h3>
+            <p>Use the search box below to find shared phrases across seasons.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" style="animation-delay: 0.2s;" data-filter-group>
+        <h2>Search Seasonal Text</h2>
+        <article class="search-panel">
+          <p class="search-label">Filter by season, feast, Latin phrase, or English translation</p>
+          <div class="search-row">
+            <input class="search-input" data-filter-input type="search" placeholder="Example: advent, alleluia, gaudeamus, joseph..." aria-label="Search seasonal propers">
+            <button class="search-clear" data-filter-clear type="button">Clear</button>
+          </div>
+          <p class="search-meta" data-filter-count></p>
+        </article>
+
+        <article id="advent-i" class="mass-part" data-filter-target>
           <div class="part-heading">
             <h2>Advent I (First Sunday of Advent)</h2>
             <p class="part-tag">Seasonal Proper</p>
@@ -66,7 +98,7 @@
           <p class="symbolism">Advent starts the liturgical year with expectation, vigilance, and prayer for deliverance.</p>
         </article>
 
-        <article class="mass-part">
+        <article id="lent-i" class="mass-part" data-filter-target>
           <div class="part-heading">
             <h2>Lent I (First Sunday of Lent)</h2>
             <p class="part-tag">Seasonal Proper</p>
@@ -90,7 +122,7 @@
           <p class="symbolism">Lent frames spiritual combat through fasting, repentance, and dependence on grace.</p>
         </article>
 
-        <article class="mass-part">
+        <article id="easter-sunday" class="mass-part" data-filter-target>
           <div class="part-heading">
             <h2>Easter Sunday</h2>
             <p class="part-tag">Seasonal Proper</p>
@@ -114,7 +146,7 @@
           <p class="symbolism">Easter proclaims Christ's victory over death and the opening of eternal life for the Church.</p>
         </article>
 
-        <article class="mass-part">
+        <article id="st-joseph" class="mass-part" data-filter-target>
           <div class="part-heading">
             <h2>Saint Joseph (19 March)</h2>
             <p class="part-tag">Saints-Day Proper</p>
@@ -138,7 +170,7 @@
           <p class="symbolism">Saint Joseph's proper highlights justice, hidden fidelity, and guardianship of the Incarnate Word.</p>
         </article>
 
-        <article class="mass-part">
+        <article id="all-saints" class="mass-part" data-filter-target>
           <div class="part-heading">
             <h2>All Saints (1 November)</h2>
             <p class="part-tag">Saints-Day Proper</p>
